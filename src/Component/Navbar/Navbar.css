@@ -1,0 +1,71 @@
+.burger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.burger span {
+  height: 2px;
+  width: 18px;
+  background-color: var(--muted);
+}
+
+.Chanel_logo_App {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--surface);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.profile_img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.fstChar_logo_App {
+  font-weight: bold;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.Auth_Btn {
+  background: transparent;
+  color: #3ea6ff;
+  border: 1px solid #3ea6ff;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.hover-bg:hover {
+  background-color: rgba(255,255,255,0.03) !important;
+}
+.phone-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.phone-modal {
+  background: var(--surface);
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+}

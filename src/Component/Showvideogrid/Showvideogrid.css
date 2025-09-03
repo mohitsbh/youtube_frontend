@@ -1,0 +1,12 @@
+
+.Container_ShowVideoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.video_box_app {
+  border: 2px solid transparent;
+  width: 100%;
+}

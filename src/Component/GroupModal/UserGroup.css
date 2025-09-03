@@ -1,0 +1,75 @@
+.user-groups-container {
+  background-color: #1e1e1e;
+  padding: 24px;
+  border-radius: 12px;
+  color: #f5f5f5;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.user-groups-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #3a8ef6;
+  text-align: center;
+}
+
+.no-groups {
+  text-align: center;
+  color: #aaa;
+  font-style: italic;
+}
+
+.group-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.group-item {
+  background-color: #2a2a2a;
+  border: 1px solid #3a8ef6;
+  padding: 14px 16px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s ease;
+}
+
+.group-item:hover {
+  background-color: #323232;
+}
+
+.group-name {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.group-members {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .user-groups-container {
+    padding: 16px;
+  }
+
+  .group-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .group-name {
+    font-size: 1rem;
+  }
+
+  .group-members {
+    font-size: 0.85rem;
+  }
+}

@@ -1,0 +1,80 @@
+.video-call-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.video-call-container h2 {
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.video-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.video-box {
+  width: 100%;
+  max-width: 400px;
+  height: 240px;
+  background: #000;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+.button-controls {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  color: white;
+}
+
+.btn.start {
+  background-color: #28a745;
+}
+.btn.screen {
+  background-color: #007bff;
+}
+.btn.record {
+  background-color: #ffc107;
+  color: #333;
+}
+.btn.end {
+  background-color: #dc3545;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .video-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-box {
+    max-width: 100%;
+    height: auto;
+  }
+}

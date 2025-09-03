@@ -1,0 +1,209 @@
+.container_videoPage {
+  height: calc(100vh - 3.4rem);
+  overflow-y: auto;
+  background-color: var(--bg);
+  color: var(--muted);
+}
+.container2_videoPage {
+  margin: 1.5rem 4.5rem;
+  display: flex;
+}
+.video_display_screen_videoPage {
+  width: calc(100vw - 4.5rem - 35vw);
+  padding: 1rem;
+}
+
+.video_ShowVideo_videoPage {
+  padding: 0.1rem;
+  height: 70vh;
+  width: 100%;
+  background-color: var(--card);
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+.video_btns_title_VideoPage_cont {
+  border-bottom: 3px solid rgba(245, 222, 179, 0.175);
+  flex-grow: 1;
+}
+.video_title_VideoPage {
+  font-size: x-large;
+  margin: 0;
+  padding: 1rem 0.8rem;
+}
+.views_date_btns_VideoPage {
+  display: flex;
+  margin: 0.5rem 1rem;
+  width: calc(100vw - 6.5rem - 35vw);
+}
+.views_videoPage {
+  display: flex;
+  font-size: 0.8rem;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.chanel_details_videoPage {
+  border-bottom: 3px solid rgba(245, 222, 179, 0.075);
+  display: flex;
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 700;
+}
+.chanel_logo_videoPage {
+  display: flex;
+  border: 1px solid rgba(255,255,255,0.04);
+  width: 4rem;
+  height: 4rem;
+  margin: 0.5rem;
+  background-color: var(--card);
+  border-radius: 100%;
+}
+
+.chanel_logo_videoPage p {
+  color: var(--text);
+  margin: auto;
+  font-size: xx-large;
+}
+.chanel_name_videoPage {
+  font-weight: bolder;
+  margin: auto 1rem;
+  font-size: larger;
+}
+.comments_VideoPage {
+  width: 100%;
+  padding-inline-start: 0.5rem;
+}
+.moreVideoBar {
+  width: calc(100vw - 4.5rem - 70vw);
+  padding: 0 1rem;
+}
+
+.moreVideoBar {
+  margin-top: 2rem;
+  padding: 1rem;
+  border-top: 1px solid #ccc;
+}
+
+.moreVideoCard {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  margin: 10px 0;
+  color: var(--text);
+}
+
+.moreVideoCard video {
+  border-radius: 8px;
+}
+.moreVideoBar {
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+/* .moreVideoScroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 0.5rem 0;
+} */
+
+.moreVideoCard {
+  min-width: 160px;
+  text-decoration: none;
+  color: var(--text);
+  flex-shrink: 0;
+}
+
+.moreVideoCard video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.moreVideoCard .title {
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.moreVideoScroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  scroll-behavior: smooth;
+}
+
+.moreVideoCard {
+  flex: 0 0 auto;
+  width: 160px;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.moreVideoCard video {
+  width: 100%;
+  border-radius: 8px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.moreVideoCard .title {
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .moreVideoCard {
+    width: 140px;
+  }
+
+  .moreVideoCard .title {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .moreVideoCard {
+    width: 120px;
+  }
+
+  .moreVideoCard .title {
+    font-size: 0.75rem;
+  }
+}
+.moreVideoBar {
+  margin-top: 2rem;
+}
+
+.moreVideoScroll {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.moreVideoCard {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+}
+
+.thumbnail_img {
+  width: 160px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.title {
+  font-size: 14px;
+  margin-top: 4px;
+}

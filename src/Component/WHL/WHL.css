@@ -1,0 +1,24 @@
+/* WHL.css */
+.card {
+  border-radius: 1rem;
+  background: var(--card);
+  color: var(--muted);
+}
+
+.card-title {
+  font-size: 1.8rem;
+}
+
+.whl_list {
+  scrollbar-width: thin;
+  scrollbar-color: #888 transparent;
+}
+
+.whl_list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.whl_list::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}

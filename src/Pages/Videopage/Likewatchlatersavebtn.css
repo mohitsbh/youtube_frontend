@@ -1,0 +1,16 @@
+button.btn svg {
+  vertical-align: middle;
+}
+
+button.btn:hover {
+  background-color: #50575e !important;
+}
+
+/* Optional: Hide horizontal scrollbar for mobile */
+.d-flex.overflow-auto::-webkit-scrollbar {
+  display: none;
+}
+.d-flex.overflow-auto {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}

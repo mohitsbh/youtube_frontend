@@ -1,0 +1,65 @@
+.library-layout {
+  display: flex;
+  background-color: #121212;
+  color: #f0f0f0;
+  min-height: 100vh;
+}
+
+.library-main {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+/* Each section */
+.section-container {
+  border-bottom: 1px solid #444;
+  padding: 1.5rem 1rem;
+  background-color: #1c1c1c;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Section heading */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #00bfff;
+}
+
+/* 4 cards in one line */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  max-height: 65vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #888 #1a1a1a;
+}
+
+.video-grid::-webkit-scrollbar {
+  width: 6px;
+}
+.video-grid::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .section-header {
+    font-size: 1.2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .library-main {
+    padding: 0.5rem;
+  }
+}

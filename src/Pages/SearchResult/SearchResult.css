@@ -1,0 +1,36 @@
+.search-results-page {
+  padding: 1rem;
+  background-color: #181818;
+  min-height: 100vh;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.video-card {
+  background-color: #282828;
+  padding: 0.6rem;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.video-card:hover {
+  transform: scale(1.03);
+}
+
+.video-thumbnail {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.video-title {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}

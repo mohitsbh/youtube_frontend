@@ -1,0 +1,104 @@
+.container_leftSidebar {
+    background-color: var(--surface);
+    width: 4.7rem;
+    height: calc(100vh - 3.55rem);
+    box-sizing: border-box;
+    overflow-y: auto;
+  }
+  .icon_sidebar_div {
+    cursor: pointer;
+  color: var(--icon);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+  .icon_sidebar {
+      margin: auto;
+  }
+  /* Make sure SVG icons inherit the color set on the container */
+  .icon_sidebar_div svg {
+    fill: currentColor !important;
+    color: inherit !important;
+  }
+  .text_sidebar_icon{
+      text-align: center;
+      font-weight: 300;
+      font-size: 0.85rem;
+      padding: 0.2rem;
+
+      color: var(--text);
+  
+  }
+  .icon_sidebar_div:hover,
+  .icon_sidebar_div.active{
+      color: var(--accent);
+      background-color: rgba(62,166,255,0.04);
+  }
+  
+  /** drawer sidebar*/
+  .container_DrawaerLeftSidebar{
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    z-index: 500;
+  }
+  .container2_DrawaerLeftSidebar{
+    height: calc(100vh - 3.6rem);
+    overflow-y: auto;
+    background-color: var(--surface);
+    width: 15rem;
+  }
+  .Drawer_leftsidebar,
+  .libraryBtn_Drawerleftsidebar{
+    padding-top: 0.5rem;
+    border-bottom: 2px solid rgba(128,128,128,0.293);
+  }
+  .icon_sidebar_div p{
+    display: flex;
+    margin: 0;
+  }
+  .subScriptions_lsdbar{
+    color:var(--muted);
+  }
+  .subScriptions_lsdbar h3{
+    text-decoration: underline;
+    margin: 20px 10px;
+  }
+  .chanel_lsdbar{
+    display: flex;
+    cursor: pointer;
+  }
+  .chanel_lsdbar:hover{
+    color: var(--accent);
+  }
+  .chanel_lsdbar p{
+    border: 1px solid;
+    background-color: grey;
+    padding: 0.5rem;
+    border-radius: 100%;
+    margin: 1rem;
+  }
+  .chanel_lsdbar div{
+    margin: auto;
+    width: 60%;
+  }
+  .container3_DrawaerLeftSidebar{
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0.488);
+  }
+  .list-group-item {
+  background-color: transparent;
+    color: var(--text);
+  border: none;
+  padding: 0.7rem 1rem;
+}
+
+.list-group-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.list-group-item.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  font-weight: bold;
+}

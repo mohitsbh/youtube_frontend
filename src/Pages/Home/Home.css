@@ -1,0 +1,19 @@
+.navigation_Home{
+    color: var(--muted);
+    background-color: var(--surface);
+    position: sticky;
+    display: flex;
+    overflow-x: auto;
+    top: 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.btn_nav_home{
+    background-color: var(--card);
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 45px;
+    cursor: pointer;
+}
+.btn_nav_home:hover{
+    background-color: rgba(255,255,255,0.04);
+}

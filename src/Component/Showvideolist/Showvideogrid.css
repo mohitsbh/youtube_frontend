@@ -1,0 +1,15 @@
+
+.Container_ShowVideoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.video_box_app {
+  transition: transform 0.2s ease;
+}
+
+.video_box_app:hover {
+  transform: scale(1.03);
+}

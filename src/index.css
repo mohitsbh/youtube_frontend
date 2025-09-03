@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+::-webkit-scrollbar{
+  width: 0.5rem;
+  height: 0.5rem;
+}
+::-webkit-scrollbar-thumb{
+  background-color: grey;
+  border-radius: 5rem;
+}
+
+/* Add to App.css or index.css */
+.white-theme {
+  background: #fff !important;
+  color: #222 !important;
+}
+.dark-theme {
+  background: #181818 !important;
+  color: #fff !important;
+}
+
+/* Theme variables for components to consume */
+:root{
+  --bg: #0f1720;
+  --surface: #111318;
+  --muted: #9aa4b2;
+  --text: #e0e0e0;
+  --icon: rgba(255,255,255,0.855);
+  --accent: #3ea6ff;
+  --card: #16191d;
+}
+
+.white-theme{
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --muted: #4b5563;
+  --text: #111827;
+  --icon: #111827;
+  --accent: #0ea5e9;
+  --card: #f8fafc;
+}
+
+body{
+  background: var(--bg) !important;
+  color: var(--muted);
+}
+
+/* Make Bootstrap text utilities follow theme variables */
+.text-light, .text-white {
+  color: var(--text) !important;
+}
+
+/* Make .bg-dark surfaces use theme surface and text */
+.bg-dark {
+  background: var(--surface) !important;
+  color: var(--text) !important;
+}
+
+/* Ensure SVGs inside dark surfaces inherit text color */
+.bg-dark svg,
+.text-light svg,
+.text-white svg {
+  fill: currentColor !important;
+  color: inherit !important;
+}
+
+/* Ensure outline success/danger buttons also allow SVGs to inherit */
+.btn-outline-success svg,
+.btn-outline-danger svg,
+.btn-outline-info svg,
+.btn-outline-light svg {
+  fill: currentColor !important;
+  color: inherit !important;
+}
+
+/* Make Bootstrap's outline-light buttons follow theme variables */
+.btn-outline-light {
+  color: var(--icon) !important;
+  border-color: rgba(255,255,255,0.12) !important;
+  background: transparent;
+}
+/* Light theme specific border correction (var(--icon) will be dark for white-theme) */
+body.white-theme .btn-outline-light {
+  border-color: rgba(0,0,0,0.08) !important;
+}
+/* Ensure any SVGs inside buttons inherit text color */
+.btn-outline-light svg,
+.btn-outline-light * svg {
+  fill: currentColor !important;
+  color: inherit !important;
+}
+
+/* Theme-aware button used for like/watch/save controls */
+.theme-btn {
+  color: var(--icon) !important;
+  background: transparent !important;
+  border: 1px solid transparent !important;
+}
+.theme-btn svg,
+.theme-btn * svg {
+  fill: currentColor !important;
+  color: inherit !important;
+}
+/* when active (btn-info) ensure accent shows */
+.theme-btn.btn-info {
+  color: var(--accent) !important;
+}
+
+/* Navbar theme toggle */
+.btn-toggle-theme{
+  background: transparent;
+  border: none;
+  color: inherit;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+.btn-toggle-theme:hover{ background: rgba(255,255,255,0.03); }
+
+/* Make common Bootstrap utility classes theme-aware so existing markup updates without changing components */
+body.dark-theme .bg-dark{
+  background: var(--surface) !important;
+  color: var(--muted) !important;
+}
+body.white-theme .bg-dark{
+  background: var(--surface) !important;
+  color: #111827 !important;
+}
+
+body.dark-theme .text-white{
+  color: var(--muted) !important;
+}
+body.white-theme .text-white{
+  color: #111827 !important;
+}
+
+/* Inputs & suggestion boxes used in Navbar search */
+body.dark-theme .form-control.bg-dark{
+  background: rgba(255,255,255,0.03) !important;
+  color: #e6eef6 !important;
+  border-color: rgba(255,255,255,0.06) !important;
+}
+body.white-theme .form-control.bg-dark{
+  background: rgba(0,0,0,0.03) !important;
+  color: #111827 !important;
+  border-color: rgba(0,0,0,0.08) !important;
+}
+
+body.dark-theme .position-absolute.bg-dark{
+  background: var(--surface) !important;
+  border-color: rgba(255,255,255,0.06) !important;
+}
+body.white-theme .position-absolute.bg-dark{
+  background: var(--card) !important;
+  border-color: rgba(0,0,0,0.06) !important;
+}
+
+/* Buttons that previously used outline-info / outline-secondary */
+body.dark-theme .btn-outline-info,
+body.dark-theme .btn-outline-secondary{
+  color: var(--accent) !important;
+  border-color: rgba(62,166,255,0.18) !important;
+}
+body.white-theme .btn-outline-info,
+body.white-theme .btn-outline-secondary{
+  color: var(--accent) !important;
+  border-color: rgba(14,165,233,0.18) !important;
+}
+
+/* Profiles / small surfaces */
+body.dark-theme .bg-secondary{
+  background: rgba(255,255,255,0.06) !important;
+}
+body.white-theme .bg-secondary{
+  background: rgba(0,0,0,0.06) !important;
+}

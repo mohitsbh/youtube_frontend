@@ -1,0 +1,40 @@
+/* src/components/ProfileDownloads.css */
+.profile-downloads {
+  padding: 1rem;
+  max-width: 800px;
+  margin: auto;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #000;
+}
+
+.download-item {
+  background-color: #2a2a2a;
+  padding: 1rem;
+  margin: 0.8rem 0;
+  border-radius: 6px;
+  border-left: 4px solid #3ea6ff;
+}
+
+.download-item p {
+  margin: 0.3rem 0;
+}
+
+.timestamp {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.loading-text,
+.empty-text {
+  color: #aaa;
+  padding: 1rem 0;
+  font-style: italic;
+}
+
+.divider {
+  border: 0;
+  border-top: 1px solid #444;
+  margin: 2rem 0;
+}
