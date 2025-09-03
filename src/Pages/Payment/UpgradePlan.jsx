@@ -24,7 +24,7 @@ const UpgradePlan = () => {
     }
 
     try {
-  const base = process.env.REACT_APP_API_URL || 'https://youtube-backend-8hha.onrender.com';
+  const base = 'https://youtube-backend-8hha.onrender.com';
       const { data } = await axios.post(
         `${base}/api/payment/create-order`,
         { amount: plan.price, planType: plan.id },
@@ -34,7 +34,7 @@ const UpgradePlan = () => {
       );
 
       // Require a configured Razorpay key to avoid accidental test-mode fallbacks
-      const rzpKey = process.env.REACT_APP_RAZORPAY_KEY;
+      const rzpKey = 'rzp_test_RCgWFmNud49T66';
       if (!rzpKey) {
         toast.error("Razorpay key not configured. Set REACT_APP_RAZORPAY_KEY in client .env");
         return;

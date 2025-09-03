@@ -20,7 +20,7 @@ const SearchResult = () => {
       ) : (
         <div className="video-grid">
           {filteredVideos.map(video => {
-            const baseURL = process.env.REACT_APP_API_URL || 'https://youtube-backend-8hha.onrender.com';
+            const baseURL = 'https://youtube-backend-8hha.onrender.com';
             const thumb = (video.thumbnail || video.thumbnailPath || 'default.jpg').toString().replace(/^uploads[\\/]/, '');
             const thumbUrl = thumb === 'default.jpg' ? `/uploads/default.jpg` : `${baseURL}/uploads/${encodeURI(thumb)}`;
             return (

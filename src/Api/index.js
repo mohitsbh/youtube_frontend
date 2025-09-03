@@ -2,7 +2,7 @@ import axios from "axios";
 
 // ✅ Base Axios instance
 const API = axios.create({
-  baseURL: process.env.REACT_APP_API_URL || "https://youtube-backend-8hha.onrender.com",
+  baseURL: "https://youtube-backend-8hha.onrender.com",
 });
 
 // ✅ Add JWT token to every request if exists

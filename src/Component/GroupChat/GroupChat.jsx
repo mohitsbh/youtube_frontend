@@ -14,7 +14,7 @@ import {
 import { MdAttachFile } from 'react-icons/md';
 import { FaSmile } from 'react-icons/fa';
 
-const socket = io(process.env.REACT_APP_API_URL || 'https://youtube-backend-8hha.onrender.com'); // Update as needed
+const socket = io('https://youtube-backend-8hha.onrender.com'); // Update as needed
 
 const GroupChat = ({ group }) => {
   const [text, setText] = useState('');

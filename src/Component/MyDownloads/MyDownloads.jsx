@@ -139,7 +139,7 @@ const MyDownloads = () => {
                 controls
                 width="100%"
                 poster="https://via.placeholder.com/640x360?text=Loading..."
-                src={`${(process.env.REACT_APP_API_URL || 'https://youtube-backend-8hha.onrender.com')}/uploads/${item.videoid.resolutions?.['360p'] || item.videoid.filepath}`}
+                src={`${('https://youtube-backend-8hha.onrender.com')}/uploads/${item.videoid.resolutions?.['360p'] || item.videoid.filepath}`}
                 onError={(e) => {
                   e.target.src = "";
                   e.target.poster = "https://via.placeholder.com/640x360?text=Video+Unavailable";

@@ -14,7 +14,7 @@ const ProfileDownloads = () => {
     const fetchDownloads = async () => {
       try {
         const token = JSON.parse(localStorage.getItem("Profile"))?.token;
-  const base = process.env.REACT_APP_API_URL || 'https://youtube-backend-8hha.onrender.com';
+  const base ='https://youtube-backend-8hha.onrender.com';
   const res = await axios.get(`${base}/api/download/my-downloads`, {
           headers: { Authorization: `Bearer ${token}` },
         });
