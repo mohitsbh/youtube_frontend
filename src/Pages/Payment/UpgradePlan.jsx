@@ -24,7 +24,7 @@ const UpgradePlan = () => {
     }
 
     try {
-  const base = 'https://youtube-backend-8hha.onrender.com';
+  const base = 'https://yourtube-wtq4.onrender.com';
       const { data } = await axios.post(
         `${base}/api/payment/create-order`,
         { amount: plan.price, planType: plan.id },

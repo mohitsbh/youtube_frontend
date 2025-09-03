@@ -14,7 +14,7 @@ const Showvideo = ({ vid }) => {
     vid?.filepath;
 
   // Base server URL for media (no trailing slash)
-  const baseURL ='https://youtube-backend-8hha.onrender.com';
+  const baseURL ='https://yourtube-wtq4.onrender.com';
 
   // Remove "uploads/" prefix if present
   const relativeVideoPath = currentResPath?.replace(/^uploads[\\/]/, '');

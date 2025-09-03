@@ -27,7 +27,7 @@ const formatTime = (s) => {
   return `${m}:${sec}`;
 };
 
-const BASE_URL ="https://youtube-backend-8hha.onrender.com";
+const BASE_URL ="https://yourtube-wtq4.onrender.com";
 
 const VideoPlayer = ({
   src,

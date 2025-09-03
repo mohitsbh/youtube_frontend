@@ -3,7 +3,7 @@ import Peer from 'peerjs';
 import io from 'socket.io-client';
 import './VideoCall.css'; // make sure this file is in the same folder
 
-const socket = io('https://youtube-backend-8hha.onrender.com');
+const socket = io('https://yourtube-wtq4.onrender.com');
 
 const VideoCall = ({ roomId, username }) => {
   const [callStarted, setCallStarted] = useState(false);

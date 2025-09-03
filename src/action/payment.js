@@ -96,7 +96,7 @@ export const createOrderAndPay = (planType, amount) => async (dispatch) => {
       return;
     }
 
-  const base = process.env.REACT_APP_API_URL || 'https://youtube-backend-8hha.onrender.com';
+  const base = 'https://yourtube-wtq4.onrender.com';
     // 🧾 Step 1: Create order on backend
     const { data } = await axios.post(
       `${base}/api/payment/create-order`,

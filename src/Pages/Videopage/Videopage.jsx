@@ -53,7 +53,7 @@ const Videopage = () => {
   }
 
   // 🧠 Generate proper video source
-  const baseURL = "https://youtube-backend-8hha.onrender.com";
+  const baseURL = "https://yourtube-wtq4.onrender.com";
   const videoPath = currentVideo?.resolutions?.['720p'] || currentVideo?.filepath || "";
   const videoSrc = videoPath.startsWith('uploads/')
     ? `${baseURL}/${videoPath}`
